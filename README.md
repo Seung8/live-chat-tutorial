@@ -1,5 +1,7 @@
 # Django Channels Tutorial
 
+</br>
+
 [참고: Django Channels 공식문서](https://channels.readthedocs.io/en/latest/index.html#django-channels)
 
 간단한 채팅 구현 튜토리얼로 두 개의 페이지가 구성됩니다.
@@ -13,6 +15,8 @@
 - Django 2.2
 - Channels 2.2
 
+</br>
+
 **Channels 2.0 이상 부터는 Python 3.5 버전 이상, Django 1.11 버전 이상을 지원합니다.**
 
 </br>
@@ -21,6 +25,7 @@
 
 </br>
 
+## Part 1: 기본 설정하기
 
 ### 프로젝트 생성
 
@@ -240,7 +245,7 @@ chat/
 
 `chat/templates/index.html`을 렌더링 할 `views.py`에 아래 코드를 추가합니다.
 
-```
+```python
 # chat/views.py
 
 from django.shortcuts import render
@@ -292,4 +297,10 @@ urlpatterns = [
 ```
 
 </br>
+
+---
+
+</br>
+
+## Part 2: 채팅서버 구현
 
